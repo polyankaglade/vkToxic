@@ -1,0 +1,16 @@
+# general
+pandas
+numpy
+
+# preprocessing
+re
+tqdm
+pymorphy2
+git+https://github.com/polyankaglade/RedditScore.git
+
+# models
+sklearn
+matplotlib
+
+# web
+flask
