@@ -3,7 +3,6 @@ pandas
 numpy
 
 # preprocessing
-re
 tqdm
 pymorphy2
 git+https://github.com/polyankaglade/RedditScore.git
