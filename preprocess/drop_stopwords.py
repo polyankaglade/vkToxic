@@ -10,6 +10,6 @@ def delete_stop_words(text_data: str, add_stop = []):
   
 """
 usage:
-import delete_stop_words from ....
+import delete_stop_words from drop_stopwords
 string_without_stop_words = delete_stop_words(text_string)
 """
