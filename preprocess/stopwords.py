@@ -7,6 +7,7 @@ def delete_stop_words(text_data: str, add_stop = []):
   words = [i for i in text_data if i not in stop_words and i not in add_stop]
   return " ".join(words)
  
+  
 """
 usage:
 import delete_stop_words from ....
