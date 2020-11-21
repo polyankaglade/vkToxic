@@ -1,7 +1,7 @@
 import string
 
-def punct_del(file_text):
-    tokens = file_text.split()
+def del_punct(text_data):
+    tokens = text_data.split()
 
     # delete punctuation symbols
     tokens = [i for i in tokens if ( i not in string.punctuation )]

@@ -25,20 +25,20 @@ neg_emojis = ['🤨', '😐', '😑', '😶', '🙄', '😣', '😥', '🤐', '�
 neutral_emojis = ['😴', '🤒', '🤢', '😷', '😵', '🦠', '🥶', '🥴', '💤', '😱', '🤔']
 
 
-def del_emoji(text):
-    str_emo = emoji.demojize(text)
+def del_emoji(text_data):
+    str_emo = emoji.demojize(text_data)
     text = re.sub(':.*?:', '', str_emo)
     return re.sub('\s+', ' ', text)
 
 
-def replace_all_emoji(text):
-    str_emo = emoji.demojize(text)
+def replace_all_emoji(text_data):
+    str_emo = emoji.demojize(text_data)
     text = re.sub(':.*?:', 'emoji', str_emo)
     return re.sub('\s+', ' ', text)
 
 
-def replace_emoji_by_class(text):
-    tokens = text.split()
+def replace_emoji_by_class(text_data):
+    tokens = text_data.split()
     new_tokens = []
     for t in tokens:
         if t in pos_emojis:

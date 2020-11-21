@@ -12,7 +12,7 @@ u'просто', u'блин', u'очень', u'самые', u'твоем', u'в�
 ]
 
 
-def delete_stop_words(text_data: str, add_stop = []):
+def del_stop_words(text_data: str, add_stop = []):
   text_data = text_data.lower()
   words = [i for i in text_data if i not in stop_words and i not in add_stop]
   return " ".join(words)
@@ -20,6 +20,6 @@ def delete_stop_words(text_data: str, add_stop = []):
   
 """
 usage:
-import delete_stop_words from drop_stopwords
-string_without_stop_words = delete_stop_words(text_string)
+import del_stop_words from drop_stopwords
+string_without_stop_words = del_stop_words(text_string)
 """
