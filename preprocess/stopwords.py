@@ -13,8 +13,8 @@ u'просто', u'блин', u'очень', u'самые', u'твоем', u'в�
 
 
 def del_stop_words(text_data: str, add_stop = []):
-  text_data = text_data.lower()
-  words = [i for i in text_data if i not in stop_words and i not in add_stop]
+  tokens = text_data.split()
+  words = [t for t in tokens if t not in stop_words and t not in add_stop]
   return " ".join(words)
  
   
