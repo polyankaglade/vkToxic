@@ -3,6 +3,7 @@
 
 Участники:
 - [Елизавета Ершова](https://github.com/eoershova)
+- [Елена Вольф](https://github.com/Graf-D)
 - [Василиса Кутузова]()
 - [Анна Полянская](https://github.com/polyankaglade)
 - [Алина Тиллабаева](https://github.com/alinatl)
