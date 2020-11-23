@@ -6,6 +6,8 @@ numpy
 tqdm
 pymorphy2
 emoji
+slovnet
+navec
 
 # models
 sklearn
@@ -13,3 +15,4 @@ matplotlib
 
 # web
 flask
+urllib
