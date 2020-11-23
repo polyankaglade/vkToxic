@@ -8,7 +8,8 @@ from remove_ner import * #remove_ner
 def preprocess(text, params={'punctuation_deletion': 'no',
                              'lemmatization': 'no',
                              'stopwords_deletion': 'no', 
-                             'emojis_processing': 'no'}):
+                             'emojis_processing': 'no', 
+                            'remove_ner': 'no'}):
     
     if params['punctuation_deletion'] == 'no':
         pass 
@@ -43,5 +44,12 @@ def preprocess(text, params={'punctuation_deletion': 'no',
         text = replace_emoji_by_class(text)
     else:
         raise ValueError('такой опции нет')
-        
+    
+    if params['remove_ner'] == 'no':
+        pass 
+    elif params['remove_ner'] == 'yes':
+        text = remove_ner(text)
+    else:
+        raise ValueError('такой опции нет')
+      
     return text
