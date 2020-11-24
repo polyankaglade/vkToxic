@@ -18,10 +18,18 @@ ner = NER.load('slovnet_ner_news_v1.tar')
 ner.navec(navec)
 
 
-def remove_ner(text):
+def delete_ner(text):
         ner_spans = ner(text).spans
         for span in ner_spans:
             span_value = text[span.start:span.stop]
             text = re.sub(span_value, ' ', text)
+        text = " ".join(text.split())
+        return text
+    
+def replace_ner(text):
+        ner_spans = ner(text).spans
+        for span in ner_spans:
+            span_value = text[span.start:span.stop]
+            text = re.sub(span_value, ' именсущ ', text)
         text = " ".join(text.split())
         return text
