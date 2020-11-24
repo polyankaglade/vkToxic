@@ -4,7 +4,7 @@
 Участники:
 - [Елизавета Ершова](https://github.com/eoershova)
 - [Елена Вольф](https://github.com/Graf-D)
-- [Василиса Кутузова]()
+- [Василиса Кутузова](https://github.com/dotsanddashes)
 - [Анна Полянская](https://github.com/polyankaglade)
 - [Алина Тиллабаева](https://github.com/alinatl)
 - [Анна Щербакова](https://github.com/Aniezka)
