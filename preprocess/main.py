@@ -18,7 +18,17 @@ def preprocess(text, params={'punctuation_deletion': 'no',
     else:
         raise ValueError('такой опции нет')
         
-    
+        
+    if params['preprocess_ner'] == 'no':
+        pass 
+    elif params['preprocess_ner'] == 'del':
+        text = delete_ner(text)
+    elif params['preprocess_ner'] == 'replace':
+        text = replace_ner(text)
+    else:
+        raise ValueError('такой опции нет')
+        
+        
     if params['lemmatization'] == 'no':
         pass 
     elif params['lemmatization'] == 'yes':
@@ -45,13 +55,5 @@ def preprocess(text, params={'punctuation_deletion': 'no',
     else:
         raise ValueError('такой опции нет')
     
-    if params['preprocess_ner'] == 'no':
-        pass 
-    elif params['preprocess_ner'] == 'del':
-        text = delete_ner(text)
-    elif params['preprocess_ner'] == 'replace':
-        text = replace_ner(text)
-    else:
-        raise ValueError('такой опции нет')
       
     return text
