@@ -8,10 +8,13 @@ pymorphy2
 emoji
 slovnet
 navec
+razdel
 
 # models
 sklearn
 matplotlib
+xgboost
+
 
 # web
 flask
