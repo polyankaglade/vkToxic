@@ -18,4 +18,3 @@ xgboost
 
 # web
 flask
-urllib

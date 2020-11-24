@@ -1,12 +1,18 @@
 import json
 
-from tokenization import * # tokenize
 from punctuation import * # del_punct
 from lemmatization import * # lemmatize
 from stopwords import * # del_stop_words, badwords
 from emojis import * # del_emoji, replace_all_emoji, replace_emoji_by_class
 from ner_preproc import * #delete_ner, replace_ner
 from vulgars import * # replace_vulgar
+
+best_params = {'punctuation_deletion': 'no',
+               'ner_processing': 'replace',
+               'lemmatization': 'yes',
+               'stopwords_deletion': 'no',
+               'emojis_processing': 'no',
+               'vulgar_processing': 'yes'}
 
 def preprocess(text, params={'punctuation_deletion': 'no',
                              'ner_processing': 'no',

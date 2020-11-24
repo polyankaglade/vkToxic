@@ -16,10 +16,4 @@ def del_stop_words(text_data: str, add_stop = []):
   tokens = text_data.split()
   words = [t for t in tokens if t not in stop_words and t not in add_stop]
   return " ".join(words)
- 
-  
-"""
-usage:
-import del_stop_words from drop_stopwords
-string_without_stop_words = del_stop_words(text_string)
-"""
+

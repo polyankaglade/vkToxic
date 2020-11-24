@@ -11,10 +11,3 @@ def tokenize(text_data):
     text_data = re.sub(r'(?<=\w)\*', 'ё', text_data) # замена * на Ё, если перед ним буква
     tokens = simple_word_tokenize(text_data) # токенизация
     return ' '.join(tokens)
-
-
-"""
-usage:
-from preprocess import tokenization
-token_string = tokenization.tokenize(text_string)
-"""
