@@ -19,17 +19,24 @@ ner.navec(navec)
 
 
 def delete_ner(text):
+    try:
         ner_spans = ner(text).spans
         for span in ner_spans:
             span_value = text[span.start:span.stop]
             text = re.sub(span_value, ' ', text)
         text = " ".join(text.split())
-        return text
-    
+    except Exception:
+        pass
+    return text
+
+
 def replace_ner(text):
+    try:
         ner_spans = ner(text).spans
         for span in ner_spans:
             span_value = text[span.start:span.stop]
             text = re.sub(span_value, ' NER ', text)
         text = " ".join(text.split())
-        return text
+    except Exception:
+        pass
+    return text
