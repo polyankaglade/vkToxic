@@ -9,7 +9,7 @@ def preprocess(text, params={'punctuation_deletion': 'no',
                              'lemmatization': 'no',
                              'stopwords_deletion': 'no', 
                              'emojis_processing': 'no', 
-                            'remove_ner': 'no'}):
+                            'preprocess_ner': 'no'}):
     
     if params['punctuation_deletion'] == 'no':
         pass 
@@ -45,10 +45,12 @@ def preprocess(text, params={'punctuation_deletion': 'no',
     else:
         raise ValueError('такой опции нет')
     
-    if params['remove_ner'] == 'no':
+    if params['preprocess_ner'] == 'no':
         pass 
-    elif params['remove_ner'] == 'yes':
-        text = remove_ner(text)
+    elif params['preprocess_ner'] == 'del':
+        text = delete_ner(text)
+    elif params['preprocess_ner'] == 'replace':
+        text = replace_ner(text)
     else:
         raise ValueError('такой опции нет')
       
