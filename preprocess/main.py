@@ -3,7 +3,7 @@ from punctuation import * # del_punct
 from lemmatization import * # lemmatize
 from stopwords import * # del_stop_words, badwords
 from emojis import * # del_emoji, replace_all_emoji, replace_emoji_by_class
-from remove_ner import * #remove_ner
+from ner_preproc import * #delete_ner, replace_ner
 
 def preprocess(text, params={'punctuation_deletion': 'no',
                              'lemmatization': 'no',
