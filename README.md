@@ -10,8 +10,10 @@
 - [Анна Щербакова](https://github.com/Aniezka)
 - [Егор Яцишин](https://github.com/toskn)
 
-## [наш сайт](http://vksentimentmonitor.pythonanywhere.com/) 
+---
 
-<a href="https://docs.google.com/spreadsheets/d/1597mw3Brq__jjZ_NCJm4h7XtOg-mpsgUlKUrzeKcX8I/edit?usp=sharing">
-  <img src="https://www.seekpng.com/png/detail/19-198312_google-sheets-google-sheets-png.png" height="50" alt_text="разметка">
-</a>
+[Data](https://docs.google.com/spreadsheets/d/1597mw3Brq__jjZ_NCJm4h7XtOg-mpsgUlKUrzeKcX8I/edit?usp=sharing)
+
+[Presentation](https://docs.google.com/presentation/d/1RbbgCB-p9VqQ3oATSWb8XAJsG8hbT0FG6mX4Heq48z0/edit?usp=sharing)
+
+[Site](http://vksentimentmonitor.pythonanywhere.com/) *deprecated*
